@@ -14,7 +14,7 @@ Com essa presença online, a NR1 proporciona:
 * Facilidade para empresas entenderem a solução;
 * Transmissão de confiança e profissionalismo desde o primeiro contato.
 
-**[Clique aqui para visualizar o projeto no ar](#)**
+[Clique aqui para visualizar o projeto no ar](https://juliamariaa.github.io/nr1-lp/)
 
 ---
 
