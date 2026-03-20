@@ -1,0 +1,59 @@
+@import '../../styles/variables';
+
+.perguntas-frequentes {
+  padding-right: 15px;
+  padding-left: 15px;
+
+  :global(.container) {
+    padding: 100px 0 !important;
+  }
+
+  &__tag {
+    font-family: $font-open-sans;
+    font-weight: 700;
+    color: $azul;
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    color: $preto;
+    text-align: center;
+  }
+
+  &__description {
+    color: $cinza;
+    text-align: center;
+    max-width: 591px;
+    margin: 0 auto;
+  }
+
+  &__accordion {
+    font-family: $font-open-sans;
+    width: 100%;
+    max-width: 873px;
+    margin: 0 auto;
+
+    :global(.accordion-button),
+    :global(.accordion-item) {
+      background-color: $cinza-claro;
+      color: $preto;
+    }
+
+    :global(.accordion-button):focus,
+    :global(.accordion-button):active {
+      background-color: $azul;
+      color: $branco;
+      box-shadow: none;
+      font-weight: 600;
+    }
+
+    :global(.accordion-button):not(:global(.collapsed)) {
+      background-color: $azul;
+      color: $branco;
+      box-shadow: none;
+      font-weight: 600;
+    }
+  }
+}

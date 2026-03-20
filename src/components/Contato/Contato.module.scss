@@ -1,0 +1,102 @@
+@import '../../styles/variables';
+
+.contato {
+  background-size: cover;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  :global(.container) {
+    padding: 50px 0 !important;
+
+    @media screen and (min-width: $bp-md) {
+      padding: 100px 0 !important;
+    }
+  }
+
+  &__tag {
+    font-family: $font-open-sans;
+    font-weight: 700;
+    color: $branco;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  &__title,
+  &__description {
+    color: $branco;
+  }
+
+  &__description {
+    width: 100%;
+    max-width: 424px;
+    margin-top: 12px;
+  }
+
+  &__form {
+    background-color: $branco;
+    padding: 24px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    @media screen and (min-width: $bp-lg) {
+      padding: 45px;
+    }
+
+    &-field {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-label {
+      font-family: $font-open-sans;
+      color: $cinza;
+      margin-bottom: 2px;
+    }
+
+    &-input {
+      padding: 12px 16px;
+      height: 40px;
+      border-radius: 50px;
+      border: 1px solid $cinza;
+
+      &:focus {
+        outline: 1px solid $azul;
+      }
+    }
+
+    &-textarea {
+      padding: 12px 16px;
+      height: 160px;
+      border-radius: 24px;
+      border: 1px solid $cinza;
+
+      &:focus {
+        outline: 1px solid $azul;
+      }
+    }
+
+    &-button {
+      background-color: $preto;
+      color: $branco;
+      font-family: $font-open-sans;
+      font-weight: 600;
+      text-align: center;
+      padding: 18px;
+      border-radius: 50px;
+      transition: background 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $azul;
+        color: $branco;
+      }
+
+      &:active {
+        transform: translateY(2px);
+        color: $branco;
+      }
+    }
+  }
+}
