@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+
+.footer {
+  background-color: $azul;
+  padding: 14px 0;
+
+  &__copyright {
+    text-align: center;
+    font-size: 16px;
+    color: $branco;
+    font-family: $font-open-sans;
+
+    &:hover {
+      color: $branco;
+    }
+  }
+}

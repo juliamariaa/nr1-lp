@@ -1,0 +1,56 @@
+@import '../../styles/variables';
+
+.beneficios {
+  padding-right: 15px;
+  padding-left: 15px;
+
+  :global(.container) {
+    padding: 100px 0 !important;
+
+    @media screen and (min-width: $bp-md) {
+      padding: 132px 0 !important;
+    }
+  }
+
+  &__tag {
+    font-family: $font-open-sans;
+    font-weight: 700;
+    color: $azul;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    color: $preto;
+    text-align: center;
+    max-width: 800px;
+  }
+
+  &__card {
+    background-color: $branco;
+    padding: 10px;
+    border-radius: 16px;
+    max-width: 730px;
+
+    @media screen and (min-width: $bp-md) {
+      padding: 24px;
+    }
+
+    &-image {
+      display: block;
+    }
+
+    &-content {
+      margin-top: 40px;
+    }
+
+    &-title {
+      color: $preto;
+    }
+
+    &-description {
+      color: $cinza;
+      margin-top: 8px;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import '../../styles/variables';
+
+.navbar {
+  background-color: $branco;
+  border-radius: 16px;
+  padding: 12px 16px;
+
+  @media screen and (min-width: $bp-lg) {
+    padding: 16px;
+  }
+
+  :global(.container) {
+    padding: 0 !important;
+  }
+
+  &__btn {
+    font-family: $font-montserrat;
+    font-weight: 600;
+    color: $preto;
+    padding: 16px;
+    border: 2px solid $preto;
+    border-radius: 16px;
+    transition: background 0.6s ease;
+    display: none;
+
+    @media screen and (min-width: $bp-lg) {
+      display: inline-block;
+    }
+
+    &:hover {
+      background-color: $azul;
+      color: $branco;
+      border-color: transparent;
+    }
+  }
+}
+
+.nav-link {
+  font-family: $font-open-sans;
+  color: $cinza;
+
+  &:hover {
+    color: $azul !important;
+  }
+}
+
+.navbar-toggler {
+  border: none !important;
+
+  &:focus {
+    border: none;
+    box-shadow: none !important;
+  }
+}
